@@ -8,6 +8,12 @@ public class WellWisher {
 
     public static void main(String[] args) {
         wish(() -> System.out.println("Hello , Good Morning.........!!" ) ) ;
+
+        Greeting hindiGreeting = () -> System.out.println("Namaskar.........||") ;
+        hindiGreeting.greet();
+        Greeting englishGreeting =  () -> System.out.println("Hello , . Good Morning.........!!") ;
+        englishGreeting.greet();
+
     }
     /*
     *  wish(greeting){}

@@ -10,12 +10,14 @@ public class RandomHighestSalary {
         // Find 3rd highest salary
         int a = listOfSalary.stream().sorted(Collections.reverseOrder()).skip(2).findFirst().get()  ;
         System.out.println(a) ;
+        Integer thirdMax = listOfSalary.stream().sorted(Collections.reverseOrder()).skip(2).findFirst().get()  ;
         // 3nd lowest
         int lowSalary = listOfSalary.stream().sorted().skip(2).findFirst().get() ;
         System.out.println(lowSalary);
         // 2ndHighest
         int secHighest = listOfSalary.stream().sorted(Collections.reverseOrder()).skip(1).findFirst().get() ;
         System.out.println(secHighest);
+
 
     }
 }

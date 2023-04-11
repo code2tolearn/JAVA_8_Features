@@ -16,6 +16,5 @@ public class CollectorToListDemo {
         List<Person> personList = Arrays.asList(p1,p2,p3,p4,p5) ;
         List<Person> personList1 = personList.stream().filter(p->p.getAge()>20).collect(Collectors.toList()) ;
         System.out.println(personList1) ;
-
     }
 }

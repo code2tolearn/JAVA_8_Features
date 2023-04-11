@@ -14,9 +14,7 @@ public class CollectorsToMapDemo {
           names.add("Suresh") ;
           names.add("Dhoni") ;
             Map<String , Integer> nameWithLength = names.stream().collect(Collectors.toMap(p->p,p->p.length())) ;
-        System.out.println(nameWithLength);
-
-
+            System.out.println(nameWithLength);
 
     }
 }

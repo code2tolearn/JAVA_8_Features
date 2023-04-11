@@ -15,7 +15,7 @@ public class FlatMapDemo {
 
         Stream<List<String>> stream = courses.stream() ;
 
-        Stream<String> ashokCourses = stream.flatMap(s->s.stream()) ;
+        Stream<String> ashokCourses = stream.flatMap(s -> s.stream()) ;
 
          ashokCourses.forEach(System.out::println);
     }

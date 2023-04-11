@@ -1,5 +1,4 @@
 package streams;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -12,4 +11,5 @@ public class Test1 {
         List<String> list1 = list.stream().map(a -> String.valueOf(a)).filter(a -> a.startsWith("2")).collect(Collectors.toList());
         System.out.println(list1);
     }
+
 }

@@ -1,5 +1,6 @@
 package streams.practiceprblm;
 
+import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -11,15 +12,20 @@ public class FrequencyOfChar {
         Stream<String> stream = Stream.of(input.toLowerCase().split("")) ;
 //          Long l = stream.collect(Collectors.counting()) ;
 //        System.out.println(l);
-         Set<Map.Entry<String ,Long>> set = stream.collect(Collectors.groupingBy(e->e , Collectors.counting())).entrySet();
-         set.stream().map(e->e.getKey()+"->"+e.getValue()).forEach(System.out::println);
-//          Stream<String> stream = Stream.of(input.toLowerCase().split("")) ;
-//          stream.collect(Collectors.groupingBy(e->e ,Collectors.counting()))
+         //Set<Map.Entry<String ,Long>> set = stream.collect(Collectors.groupingBy(e->e , Collectors.counting())).entrySet();
+        // set.stream().map(e->e.getKey()+"->"+e.getValue()).forEach(System.out::println);
+         // Stream<String> stream1 = Stream.of(input.toLowerCase().split("")) ;
+         // stream.collect(Collectors.groupingBy(e->e ,Collectors.counting()));
 //        Stream.of(input.toLowerCase().split(""))
 //                .collect(Collectors.groupingBy(e -> e, Collectors.counting()))
 //                .entrySet()
 //                .stream()
-//                .map(e -> e.getKey()+e.getValue()+" ")
+//                .map(e -> e.getKey()+"->"+e.getValue()+" ")
 //                .forEach(System.out::print);
+
+      Map<String , Long > map =   Stream.of(input.toUpperCase().split("")).collect(Collectors.groupingBy(e->e, Collectors.counting()));
+                            map.entrySet().stream().map(e->e.getKey()+"->"+e.getValue()).forEach(System.out::println);
+
+                               System.out.println(map);
     }
 }

@@ -1,9 +1,8 @@
 package streams.practiceprblm;
 
 import java.util.HashMap;
-import java.util.Map;
 
-public class Duplicatesusinghashmap {
+public class DuplicateUsingHashmap {
     public static void main(String[] args) {
         String str = "abcabddpmncopqstcbcmc" ;
         HashMap<Character , Integer> map = new HashMap<>() ;
@@ -19,8 +18,6 @@ public class Duplicatesusinghashmap {
                 if(map.get(a)> 1 ){
                     System.out.println(a);
                 }
-
-
         }
 
     }

@@ -1,5 +1,4 @@
 package streams.slicingmethods;
-
 import java.util.ArrayList;
 import java.util.List;
 

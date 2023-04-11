@@ -1,10 +1,12 @@
 package streams.collectors.grouping;
 
 import streams.User;
+import streams.filterandmapping.Person;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class GroupByDemo {
@@ -18,5 +20,8 @@ public class GroupByDemo {
 
         Map<String , List<User>> map = users.stream().collect(Collectors.groupingBy(User::getCountry)) ;
         System.out.println(map);
+          User u1 = null ;
+          // Optional class object creation
+        Optional<User> personOptional = Optional.ofNullable(u1) ;
      }
 }
